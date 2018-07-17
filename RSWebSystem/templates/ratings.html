@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Movie Recommender System </title>
+
+    </head>
+
+    <body>
+        <h1> Movie: {{movieName}}</h1>
+
+        <h3> In the field below, please rate the movie with an integer between 1 and 5.</h3>
+
+        <h3> If you have not seen the movie, give a nuetral rating of 3 </h3>
+
+        <form action = "" method ="post" name = "rating">
+            {{form.hidden_tag()}}
+            <p>
+                Please enter your rating: <br>
+                {{ form.rating}} <br>
+            </p>
+            <p><input type = "submit" value = "Submit"></p>
+        </form>
+
+        </h3>
+
+
+    </body>
+
+
+
+</html>
